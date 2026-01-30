@@ -1,0 +1,1 @@
+This folder stores CSV files containing the results of model training epochs.
