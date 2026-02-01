@@ -44,3 +44,10 @@ Software :
 ### How to use install and use this program
 
 ### How to tweak this project for your own use 
+
+### Known Issues and working on progress
+The dataset used for age prediction training exhibits a common issue of extreme data imbalance: certain age groups are significantly underrepresented, while others are heavily overrepresented. This skewed distribution undermines the model's generalization capability, making it prone to overfitting on dominant age groups and underperforming on underrepresented ones.
+
+In this training, the imbalance was partially addressed by trimming overrepresented age ranges and removing a few age groups with extremely sparse data at the distribution tails. While this helped achieve a more balanced dataset, such data reduction may also lead to insufficient training samples, potentially degrading the model’s convergence and real-world performance.
+
+Therefore, there remains room for improvement in training strategies. For example, data augmentation could help preserve sufficient sample diversity while maintaining distributional balance. Alternatively, adopting pre-trained models with stronger generalization in image-based tasks may improve performance, particularly on age ranges with limited data.
