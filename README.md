@@ -7,6 +7,18 @@ In UI, you can also choose with different model to estimate.
 
 
 ### Example 
+<table>
+  <tr>
+    <td align="center">
+      <img src="reference/prediction_windows_modelSelect_2.png" width="420"><br>
+      <sub>Step 1: Model selection</sub>
+    </td>
+    <td align="center">
+      <img src="reference/prediction_windows_modelSelect_6.png" width="420"><br>
+      <sub>Step 2: Prediction result</sub>
+    </td>
+  </tr>
+</table>
 
 ### Environment Setup
 This program development on the environment below : 
@@ -28,3 +40,7 @@ Software :
 5. Requirement.txt with all ML tool you want to build in this container, include …… .
 6. Docker file 
 7. Devcontainer.json
+
+### How to use install and use this program
+
+### How to tweak this project for your own use 
