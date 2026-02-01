@@ -46,8 +46,10 @@ Software :
 ### How to tweak this project for your own use 
 
 ### Known Issues and working on progress
-The dataset used for age prediction training exhibits a common issue of extreme data imbalance: certain age groups are significantly underrepresented, while others are heavily overrepresented. This skewed distribution undermines the model's generalization capability, making it prone to overfitting on dominant age groups and underperforming on underrepresented ones.
+The dataset used for age prediction training exhibits widespread issues with extreme data distribution.<br>
+Certain age groups are underrepresented, while others are disproportionately overrepresented.<br>
+This skewed distribution impairs the model's generalization capabilities during training, causing it to overfit specific age groups while underperforming on others.
 
-In this training, the imbalance was partially addressed by trimming overrepresented age ranges and removing a few age groups with extremely sparse data at the distribution tails. While this helped achieve a more balanced dataset, such data reduction may also lead to insufficient training samples, potentially degrading the model’s convergence and real-world performance.
+Although this training addressed the imbalance by trimming age groups with excessive data and removing a few age groups with extremely sparse data at the tail end, achieving a more balanced overall distribution, this trimming approach may also result in insufficient training samples. Consequently, the model's performance in convergence and real-world application may fall short of expectations.
 
-Therefore, there remains room for improvement in training strategies. For example, data augmentation could help preserve sufficient sample diversity while maintaining distributional balance. Alternatively, adopting pre-trained models with stronger generalization in image-based tasks may improve performance, particularly on age ranges with limited data.
+Therefore, there remains room for improvement in the model's training decisions. For instance: employing data augmentation to maintain sufficient sample size while achieving balanced distribution; or shifting to pre-trained models that demonstrate superior performance in image processing.
