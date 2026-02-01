@@ -37,7 +37,7 @@ Software :
 2. Image : Nvidia NGC Tensorflow container 
 3. Container : Docker desktop
 4. Container Tool : Dev container in VS code
-5. Requirement.txt with all ML tool you want to build in this container, include …… .
+5. Requirement.txt with all ML tool you want to build in this container.
 6. Docker file 
 7. Devcontainer.json
 
