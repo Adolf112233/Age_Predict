@@ -77,10 +77,6 @@ Software :
 6. Docker file 
 7. Devcontainer.json
 
-### How to install and use this program
-
-### How to tweak this project for your own use 
-
 ### Known Issues
 The dataset used for age prediction training exhibits widespread issues with extreme data distribution.<br>
 Certain age groups are underrepresented, while others are disproportionately overrepresented.<br>
