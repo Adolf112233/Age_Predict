@@ -5,7 +5,7 @@
 This program allow users predict the age using their own face image.
 In UI, you can also choose with different model to estimate.
 
-### Memu
+### Menu
 1. Example of Program
 2. Project Overview
 3. Environment Setup
@@ -14,7 +14,7 @@ In UI, you can also choose with different model to estimate.
 6. Reference 
 
 
-### 1.Example 
+### 1.  Example 
 <table>
   <tr>
     <td align="center">
@@ -28,7 +28,7 @@ In UI, you can also choose with different model to estimate.
   </tr>
 </table>
 
-### 2.Project Overview
+### 2.  Project Overview
 1. Dataset Analysis & Preprocessing <br>
 The project first examined the distribution of the dataset used for model training and conducted data preprocessing to improve balance and effectiveness.
 
@@ -54,7 +54,7 @@ Finally, save the trained model.
 
 
 
-### 3.Environment Setup
+### 3.  Environment Setup
 This program development on the environment below : 
 
 Hardware : 
@@ -75,17 +75,17 @@ Software :
 6. Docker file 
 7. Devcontainer.json
 
-### 4.Known Issues
+### 4.  Known Issues
 The dataset used for age prediction training exhibits widespread issues with extreme data distribution.<br>
 Certain age groups are underrepresented, while others are disproportionately overrepresented.<br>
 This skewed distribution impairs the model's generalization capabilities during training, causing it to overfit specific age groups while underperforming on others.
 
 Although this training addressed the imbalance by trimming age groups with excessive data and removing a few age groups with extremely sparse data at the tail end, achieving a more balanced overall distribution, this trimming approach may also result in insufficient training samples. Consequently, the model's performance in convergence and real-world application may fall short of expectations.
 
-### 5.Working On Progress
+### 5.  Working On Progress
 Therefore, there remains room for improvement in the model's training decisions. For instance: employing data augmentation to maintain sufficient sample size while achieving balanced distribution; or shifting to pre-trained models that demonstrate superior performance in image processing.
 
-### 6.Reference
+### 6.  Reference
 Dataset Source : https://www.kaggle.com/datasets/jangedoo/utkface-new <br>
 Kaggle Notebook : https://www.kaggle.com/code/eward96/age-and-gender-prediction-on-utkface <br>
 The data preprocessing step adopted the image cropping strategy referenced from this Kaggle notebook to improve dataset distribution.
