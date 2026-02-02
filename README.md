@@ -41,15 +41,24 @@ Software :
 6. Docker file 
 7. Devcontainer.json
 
-### How to use install and use this program
+### Project Overview
+
+
+### How to install and use this program
 
 ### How to tweak this project for your own use 
 
-### Known Issues and working on progress
+### Known Issues
 The dataset used for age prediction training exhibits widespread issues with extreme data distribution.<br>
 Certain age groups are underrepresented, while others are disproportionately overrepresented.<br>
 This skewed distribution impairs the model's generalization capabilities during training, causing it to overfit specific age groups while underperforming on others.
 
 Although this training addressed the imbalance by trimming age groups with excessive data and removing a few age groups with extremely sparse data at the tail end, achieving a more balanced overall distribution, this trimming approach may also result in insufficient training samples. Consequently, the model's performance in convergence and real-world application may fall short of expectations.
 
+### Working On Progress
 Therefore, there remains room for improvement in the model's training decisions. For instance: employing data augmentation to maintain sufficient sample size while achieving balanced distribution; or shifting to pre-trained models that demonstrate superior performance in image processing.
+
+### Reference
+Dataset Source : https://www.kaggle.com/datasets/jangedoo/utkface-new <br>
+Kaggle Notebook : https://www.kaggle.com/code/eward96/age-and-gender-prediction-on-utkface <br>
+The data preprocessing step adopted the image cropping strategy referenced from this Kaggle notebook to improve dataset distribution.
