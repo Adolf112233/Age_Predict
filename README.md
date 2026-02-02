@@ -5,6 +5,16 @@
 This program allow users predict the age using their own face image.
 In UI, you can also choose with different model to estimate.
 
+### Memu
+1. Example of Program
+2. Environment Setup
+3. Project Overview
+4. How to install and use this program
+5. How to tweak this project for your own use
+6. Known Issues
+7. Working On Progress
+8. Reference 
+
 
 ### Example 
 <table>
@@ -19,6 +29,32 @@ In UI, you can also choose with different model to estimate.
     </td>
   </tr>
 </table>
+
+### Project Overview
+1. Dataset Analysis & Preprocessing <br>
+The project first examined the distribution of the dataset used for model training and conducted data preprocessing to improve balance and effectiveness.
+
+   - For overrepresented age groups, specific segments exceeding 1,000 records were reduced to 500 records.
+
+   - For underrepresented or less impactful groups, only 30% of infant records were retained due to limited predictive value, while all data above 80 years old was removed because of insufficient facial features and low contribution to general prediction performance.
+
+2. Dataset Splitting <br>
+The processed data was divided into training, validation, and test sets at fixed proportions to ensure fairness and consistency during model evaluation.
+
+3. Data Augmentation <br>
+To improve the model’s generalization ability, minor image transformations were applied to the training data, including horizontal and vertical shifts of 0.1 and mirror flipping.
+
+4. Baseline Model Training & Saving <br>
+A basic CNN architecture was used as the initial training model, serving as a baseline for analyzing model behavior following the dataset rebalancing.<br>
+Finally, save the trained model.
+
+5. Use the Model to Estimate Age<br>
+   - Open `GUI_AgePrediction.py` to launch the application.
+   - Select the trained model in the GUI.
+   - Choose an image for age estimation.
+   - The predicted age will be displayed below the image.
+
+
 
 ### Environment Setup
 This program development on the environment below : 
@@ -40,9 +76,6 @@ Software :
 5. Requirement.txt with all ML tool you want to build in this container.
 6. Docker file 
 7. Devcontainer.json
-
-### Project Overview
-
 
 ### How to install and use this program
 
