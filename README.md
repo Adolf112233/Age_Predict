@@ -52,9 +52,10 @@ Finally, save the trained model.
    - Choose an image for age estimation.
    - The predicted age will be displayed below the image.
 
-6. Future Improve : Model Performance Optimization<br>
-   - Data sampling strategy optimization: Switched to the full UTKFace dataset (23,708 images, age 1~116). Performed age-bin balanced sampling and increased per-epoch exposure to mitigate data scarcity, improving MAE from 8.6 → 8.0.
-   - Model strategy optimization: Adopted an ImageNet-pretrained backbone for transfer learning, improving MAE from 8.6 → 7.17. (Note: this experiment did NOT apply the additional exposure strategy.)
+6. Future Improve (Completed): Model Performance Optimization<br>
+To improve the model performance, we also experimented two with different model performance optimization strategy designs: <br>
+   - Data sampling strategy: Applied age-bin balanced sampling with increased per-epoch exposure, improving MAE from 8.6 → 8.0.
+   - Transfer learning strategy: Use ImageNet-pretrained backbone for transfer learning, improving MAE from 8.6 → 7.17.
 
 
 ### 3.  Environment Setup
