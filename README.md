@@ -54,8 +54,8 @@ Finally, save the trained model.
 
 6. Future Improve (Completed): Model Performance Optimization<br>
 To improve the model performance, we also experimented two with different model performance optimization strategy designs: <br>
-   - Data sampling strategy: Applied age-bin balanced sampling with increased per-epoch exposure, improving MAE from 8.6 → 8.0.
-   - Transfer learning strategy: Use ImageNet-pretrained backbone for transfer learning, improving MAE from 8.6 → 7.17.
+   - Data sampling strategy (`ML_AgePredict_DataAugmentation.ipynb`): Applied age-bin balanced sampling with increased per-epoch exposure, improving MAE from 8.6 → 8.0.
+   - Transfer learning strategy(`ML_AgePredict_PretrainedBackbone.ipynb`): Use ImageNet-pretrained backbone for transfer learning, improving MAE from 8.6 → 7.17.
 
 
 ### 3.  Environment Setup
