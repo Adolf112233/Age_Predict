@@ -1,6 +1,6 @@
 # Age\_Predict
 
-## This repo is for age predict projection mission using ML model, which combine with GUI.
+## This repo is for age predict projection mission using DL model, which combine with GUI.
 
 This program allow users predict the age using their own face image.
 In UI, you can also choose with different model to estimate.
